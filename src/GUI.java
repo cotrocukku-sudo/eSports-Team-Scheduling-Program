@@ -506,7 +506,7 @@ public class GUI extends javax.swing.JFrame implements ActionListener{
         playersPanel.add(playerScrollPaneTable);
 
         // Button to remove selected event
-        JButton removeEventButton = new JButton("Remove Selected Event");
+        JButton removeEventButton = new JButton("Remove Selected Event  (Click & Drag Row)");
         removeEventButton.addActionListener(e -> {
             int selectedRow = eventTable.getSelectedRow();
             if (selectedRow != -1) {
@@ -546,7 +546,7 @@ public class GUI extends javax.swing.JFrame implements ActionListener{
         eventsPanel.add(removeEventButton);
 
         // Button to remove selected player
-        JButton removePlayerButton = new JButton("Remove Selected Player");
+        JButton removePlayerButton = new JButton("Remove Selected Player (Click & Drag Row)");
         removePlayerButton.addActionListener(e -> {
             int selectedRow = playerTable.getSelectedRow();
             if (selectedRow != -1) {

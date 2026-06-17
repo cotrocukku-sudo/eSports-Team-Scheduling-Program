@@ -28,6 +28,11 @@ Designed for my school's eSports team to help achieve scheduling efficiency in c
 
 
 
+
+
+
+
+
 <img width="1398" height="699" alt="Screenshot 2026-06-17 at 4 34 53 PM" src="https://github.com/user-attachments/assets/66e453c9-52a8-4960-89d8-ffc33cb1464d" />
 
 
@@ -44,7 +49,17 @@ Designed for my school's eSports team to help achieve scheduling efficiency in c
 
 
 
+
+
+
+
+
+
 <img width="1398" height="699" alt="Screenshot 2026-06-17 at 4 31 42 PM" src="https://github.com/user-attachments/assets/6071885d-5c0b-491f-8254-00440d410534" />
+
+
+
+
 
 
 

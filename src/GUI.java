@@ -172,7 +172,7 @@ public class GUI extends javax.swing.JFrame implements ActionListener{
         JTable eventTable = new JTable(eventTableModel);
         TableRowSorter<DefaultTableModel> eventTableSorter =
                 new TableRowSorter<>(eventTableModel);
-        eventTableSorter.setComparator(2, Comparator.naturalOrder()); // column 1 = date
+        eventTableSorter.setComparator(2, Comparator.naturalOrder()); // column 2 = date
         eventTable.setRowSorter(eventTableSorter);
         eventTableSorter.setSortKeys(List.of(
                 new RowSorter.SortKey(2, SortOrder.ASCENDING)
@@ -297,7 +297,8 @@ public class GUI extends javax.swing.JFrame implements ActionListener{
                                               practice.getName(),
                                               practice.getDate(),
                                               practice.getLocation(),
-                                              null});
+                                              null,
+                                              practice.getAttendeesNames()});
                     //add to assign event panel dropdown
                     eventsComboBox.removeAllItems();
                     eventsComboBox.addItem("Select Event");
@@ -462,7 +463,7 @@ public class GUI extends javax.swing.JFrame implements ActionListener{
         playerTable.setRowHeight(60);
         TableRowSorter<DefaultTableModel> playerTableSorter =
                 new TableRowSorter<>(playerTableModel);
-        playerTableSorter.setComparator(0, Comparator.naturalOrder()); // column 1 = date
+        playerTableSorter.setComparator(0, Comparator.naturalOrder()); // column 0 = Name
         playerTable.setRowSorter(playerTableSorter);
         playerTableSorter.setSortKeys(List.of(
                 new RowSorter.SortKey(0, SortOrder.ASCENDING)

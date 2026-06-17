@@ -13,7 +13,7 @@ public class Competition implements Event{
     private LocalDateTime date;
     private String location;
     private String game;
-    //ArrayList to the attending players of this Competition
+    //Hashmap for the attending players of this Competition
     HashMap<String, Player> attendees = new HashMap<>();
 
     //constructor of Competition

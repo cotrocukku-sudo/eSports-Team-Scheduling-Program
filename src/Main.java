@@ -4,7 +4,7 @@ public class Main {
     //arrayList that stores all players, updated every time a player is added/remove
     static ArrayList<Player> allPlayersRostered = new ArrayList<Player>();
     //arrayList that stores all events, updated every time an events gets added/removed
-    static ArrayList<Event> allEvents = new ArrayList<Event>();
+    static ArrayList<Event> allEvents = new ArrayList<Event>(); //more arraylists
     static ArrayList<Event> allPractices = new ArrayList<>();
     static ArrayList<Event> allCompetitions = new ArrayList<>();
     public static void main(String[] args) {

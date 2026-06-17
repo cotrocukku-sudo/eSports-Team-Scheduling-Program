@@ -5,8 +5,8 @@ Designed for my school's eSports team to help achieve scheduling efficiency in c
 
 **Startup instruction**
 1. Download into IntelliJ
-2. Add Gson & LGoodDatePicker as dependencies if not already included
-3. Run the Main.java file
+2. Add Gson & LGoodDatePicker as dependencies/libraries in project structure
+4. Run the Main.java file
 
 
 

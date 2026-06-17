@@ -3,6 +3,13 @@ Designed for my school's eSports team to help achieve scheduling efficiency in c
 
 
 
+**Startup instruction**
+1. Download into IntelliJ
+2. Run the Main.java file
+
+
+
+
 **Below are some of the components of the program:**
 
 

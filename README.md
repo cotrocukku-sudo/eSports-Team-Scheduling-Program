@@ -12,8 +12,11 @@ Designed for my school's eSports team to help achieve scheduling efficiency in c
   Graphical user interface(GUI) elements like buttons are a major part of my program. Most of my logic lives within the GUI class that extends Java Swing’s JFrame. The GUI is mainly composed of combinations of JPanels including three main pages–the home page, Events page, and the Players page. Because my GUI requires frequent page switches, a CardLayout(a Swing layout manager that treats JPanels like a deck of cards, allowing for only one JPanel to be displayed at a time) was implemented along with a CardLayoutContainer to store every JPanel(pages), identifiable by unique string keys, allowing for fast access of pages by calling CardLayout specific methods.
   The home page serves as the first element that the user will see when the program is launched. On it, are three buttons–the Events button, the Players button, and the Manual Save button–all of which have separate purposes when clicked. The Events page displays information about specific events using a JTable, a Java Swing display element with customizable rows and columns, with the table sorted from closest date to the furthest date. The Players page, similar to the Events Page’s layout, has a Home button and JTable to display information.
   <img width="1398" height="699" alt="Screenshot 2026-06-17 at 4 34 11 PM" src="https://github.com/user-attachments/assets/59aed86d-5f42-40be-8c40-eb1a22e7f0ce" />
+
 <img width="1398" height="699" alt="Screenshot 2026-06-17 at 4 34 53 PM" src="https://github.com/user-attachments/assets/66e453c9-52a8-4960-89d8-ffc33cb1464d" />
+
 <img width="1398" height="699" alt="Screenshot 2026-06-17 at 4 31 42 PM" src="https://github.com/user-attachments/assets/6071885d-5c0b-491f-8254-00440d410534" />
+
 <img width="1398" height="699" alt="Screenshot 2026-06-17 at 4 29 18 PM" src="https://github.com/user-attachments/assets/ed5e0fa8-9917-4cc1-a15c-6d00da698578" />
 
 

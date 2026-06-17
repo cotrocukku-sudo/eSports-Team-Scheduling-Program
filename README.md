@@ -5,7 +5,7 @@ Designed for my school's eSports team to help achieve scheduling efficiency in c
 
 **Below are some of the components of the program:**
 
-<img width="512" height="275" alt="image" src="https://github.com/user-attachments/assets/55cc654e-6a99-4833-b94c-d26728845ec7" />
+<img width="1024" height="550" alt="image" src="https://github.com/user-attachments/assets/55cc654e-6a99-4833-b94c-d26728845ec7" />
 
 
 **GUI Elements**

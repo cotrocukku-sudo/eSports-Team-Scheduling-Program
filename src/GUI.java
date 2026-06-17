@@ -181,6 +181,18 @@ public class GUI extends javax.swing.JFrame implements ActionListener{
         for (int i = 0; i < eventTableModel.getColumnCount(); i++) {
             eventTableSorter.setSortable(i, false);
         }
+        // Add mouse listener to deselect on click
+        eventTable.addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mousePressed(java.awt.event.MouseEvent e) {
+                int row = eventTable.rowAtPoint(e.getPoint());
+                if (row >= 0 && eventTable.isRowSelected(row)) {
+                    eventTable.clearSelection();
+                } else if (row >= 0) {
+                    eventTable.setRowSelectionInterval(row, row);
+                }
+            }
+        });
         JScrollPane eventScrollPaneTable = new JScrollPane(eventTable);
         //set color
         eventTable.setDefaultRenderer(Object.class, new DefaultTableCellRenderer() {
@@ -456,6 +468,18 @@ public class GUI extends javax.swing.JFrame implements ActionListener{
                 new RowSorter.SortKey(0, SortOrder.ASCENDING)
         ));
         playerTableSorter.sort();
+        // Add mouse listener to deselect on click
+        playerTable.addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mousePressed(java.awt.event.MouseEvent e) {
+                int row = playerTable.rowAtPoint(e.getPoint());
+                if (row >= 0 && playerTable.isRowSelected(row)) {
+                    playerTable.clearSelection();
+                } else if (row >= 0) {
+                    playerTable.setRowSelectionInterval(row, row);
+                }
+            }
+        });
         JScrollPane playerScrollPaneTable = new JScrollPane(playerTable);
         //set color
         playerTable.setDefaultRenderer(Object.class, new DefaultTableCellRenderer() {
@@ -485,6 +509,10 @@ public class GUI extends javax.swing.JFrame implements ActionListener{
         removeEventButton.addActionListener(e -> {
             int selectedRow = eventTable.getSelectedRow();
             if (selectedRow != -1) {
+                int confirm = JOptionPane.showConfirmDialog(null,
+                        "Are you sure you want to remove this event?",
+                        "Confirm", JOptionPane.YES_NO_OPTION);
+                if (confirm != JOptionPane.YES_OPTION) return;
                 int modelRowEvent = eventTable.convertRowIndexToModel(selectedRow);
                 Event selectedEvent = Main.allEvents.get(modelRowEvent);
                 // Remove from main event lists
@@ -511,8 +539,8 @@ public class GUI extends javax.swing.JFrame implements ActionListener{
                         }
                     }
                 }
+                DataManager.saveData();
             }
-            DataManager.saveData();
         });
         eventsPanel.add(removeEventButton);
 

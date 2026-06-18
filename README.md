@@ -1,6 +1,14 @@
 # eSports-Team-Scheduling-Program
 Designed for my school's eSports team to help achieve scheduling efficiency in collaboration with the coach. It uses 2 types of data, Players &amp; Events, and both can be created and assigned to one another. Then a table displays upcoming events by proximity of data and players by alphabetical order of their first name. **This is also my first time developing a full program from scratch that involves GUI, and therefore, this serves also as a learning project for me.**
 
+**Basic Function Outlines:**
+Add & remove players from the team
+Add & remove events from the program
+Assign players to events
+Friendly and intuitive user interface
+Displays the details of upcoming events and the participants
+Saves registered information upon closing
+
 
 
 **Startup instruction**

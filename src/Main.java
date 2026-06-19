@@ -1,3 +1,5 @@
+//Run this file to launch program!
+
 import java.util.ArrayList;
 
 public class Main {

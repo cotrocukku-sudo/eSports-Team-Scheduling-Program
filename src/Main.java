@@ -10,6 +10,7 @@ public class Main {
     static ArrayList<Event> allPractices = new ArrayList<>();
     static ArrayList<Event> allCompetitions = new ArrayList<>();
     public static void main(String[] args) {
+        System.out.println("hi");
         DataManager.loadData();  //load saved data from last use
         GUI gui = new GUI("UA eSports Scheduling System"); //create the graphical user interface
     //end of main method
